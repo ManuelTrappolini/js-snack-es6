@@ -39,20 +39,31 @@ let soccerTeam = [
 
 
 
-for( let team of soccerTeam)
+/* for( let team of soccerTeam){
     team.punti_fatti = Math.floor(Math.random() *100)
-
-for( let team of soccerTeam)
+}
+for( let team of soccerTeam){
     team.falli_subiti = Math.floor(Math.random() *100)
+} */
+
+for (let i = 0; i < soccerTeam.length; i++) {
+    soccerTeam[i].falli_subiti = Math.floor(Math.random() *100);
+    soccerTeam[i].punti_fatti = Math.floor(Math.random() *100);
+    
+}
+
 
 console.log(soccerTeam);
 
 let newArr = []
 
 for (let i = 0; i < soccerTeam.length; i++) {
+    
     const newTeam = soccerTeam[i];
-    if(soccerTeam.includes(soccerTeam.falli_subiti) && soccerTeam.includes(soccerTeam.nome)){
-        newArr.push(falli_subiti,nome )
+    if(newTeam.falli_subiti && newTeam.nome){
+        newArr.push(newTeam.nome,newTeam.falli_subiti)
     }
     
 }
+
+console.log(newArr);
