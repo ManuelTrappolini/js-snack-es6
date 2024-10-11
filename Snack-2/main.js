@@ -46,3 +46,13 @@ for( let team of soccerTeam)
     team.falli_subiti = Math.floor(Math.random() *100)
 
 console.log(soccerTeam);
+
+let newArr = []
+
+for (let i = 0; i < soccerTeam.length; i++) {
+    const newTeam = soccerTeam[i];
+    if(soccerTeam.includes(soccerTeam.falli_subiti) && soccerTeam.includes(soccerTeam.nome)){
+        newArr.push(falli_subiti,nome )
+    }
+    
+}
